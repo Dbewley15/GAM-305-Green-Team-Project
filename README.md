@@ -9,7 +9,7 @@ Team Members and Roles
 - Nico Knox - Artist
 - Colby Law - UI/UX Programmer/Designer
 - Ben Olischar - Level Designer/World Builder
-- Gabriel San Miguel - TBD
+- Gabriel San Miguel - Floating programmer/designer
 
 Roles may be shared or adjusted throughout development based on the needs of the project and the strengths of each team member.
 
@@ -19,21 +19,18 @@ The Green Team has selected the First-Person scenario for the project.
 
 Additional Elements
 
-The team will select four of the following additional elements:
+The teams four additional elements:
 
 - Elevators
 - Jump pads
-- Teleporters
 - Pick-ups
 - Enemy Tracking Capability
-- Capillaries
-- enemy reproduction
 
 
 
 Game Concept and Brainstorming
 
-**Theme/Concept:** TBD
+Theme/Concept: First Person Shooter
 
 The team will develop a single first-person level based on the requirements of the selected scenario. The final concept, setting, visual theme, enemies, 
 and implementation of the selected additional elements will be determined collaboratively by the team.
