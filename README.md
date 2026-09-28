@@ -279,3 +279,141 @@ When a bug is fixed, the team member responsible for the fix will update the tas
 GitHub commits will provide an additional record of development changes. The team will use these records to help identify when changes were made and determine whether a new problem may have been introduced by a recent update.
 
 This process will allow the team to maintain a clear record of bugs, fixes, testing results, and changes throughout the development cycle.
+
+## Module Four Project Log - Team Reflection
+
+### QA and Testing Process: What Went Well?
+
+The team’s QA and testing process was successful because testing occurred throughout Alpha development rather than only after the project was completed. Team members tested individual mechanics as they were implemented and also tested updated versions of the project after changes were merged through GitHub. Discord was used to communicate test results, errors, and possible solutions between team members.
+
+Testing by multiple team members was especially helpful when identifying integration problems. After graphics changes were merged, Donovan and Colby both encountered problems opening the updated project. This confirmed that the problem affected the shared project rather than only one team member’s installation. The team was then able to investigate the First Person Character Blueprint and Tripo3DUEBridge plugin issues.
+
+Gameplay mechanics were also tested throughout development. The team tested player movement and shooting, projectile damage, enemy health and destruction, enemy roaming, level navigation, collision, elevators, jump pads, pickups, and UI functionality. Pull requests and approvals provided another opportunity for team members to review changes before they were incorporated into the shared project.
+
+### Bugs: Identifying and Correcting
+
+Several bugs were identified and corrected during Alpha development. An earlier projectile collision issue caused the player to collide with projectiles when moving forward while shooting. Colby corrected the issue by adjusting the projectile spawn location.
+
+A larger integration problem occurred after graphics and character assets were added to the project. The updated project produced errors involving BP_FirstPersonCharacter and the Tripo3DUEBridge plugin. The First Person Character Blueprint issue was corrected. The Tripo3D plugin continued to create compatibility problems on other team members’ systems, so the team temporarily disabled the plugin in the .uproject file to allow Alpha development and testing to continue. The plugin compatibility issue will continue to be investigated as the project moves into Beta.
+
+Additional gameplay bugs were found through testing. Ben identified a collision problem with doors in the level and corrected the collision so they functioned properly.
+
+The elevator initially had a collision problem that prevented the player from standing on the moving platform. Adjusting the platform’s collision settings corrected the issue and allowed the player to ride the elevator as it moved between levels.
+
+Enemy roaming also revealed a navigation problem during testing. Although the enemy appeared to be standing inside the Nav Mesh, the enemy mesh was affecting navigation and creating an unusable area beneath the enemy. Disabling the mesh’s ability to affect navigation corrected the problem. The enemies were then able to select random reachable locations and roam around the level correctly.
+
+### QA and Testing: What Would We Do Differently?
+
+For future development, the team would test major changes on more than one team member’s computer before merging them into the main branch. This is especially important when introducing plugins, imported assets, or other external dependencies. The Tripo3D issue demonstrated that a feature working correctly on one team member’s installation does not guarantee that it will function correctly for the rest of the team.
+
+The team would also perform combined-build testing more frequently. Individual feature testing was useful for identifying problems with specific mechanics, but testing the complete build more often would allow integration problems to be discovered earlier. This would provide more time to correct issues before a milestone deadline.
+
+### Tools or Techniques: Helpful
+
+Git and GitHub were successful tools for Alpha development. Branches allowed team members to work independently, while pull requests and approvals allowed changes to be reviewed before being merged into the shared project. When project-loading problems occurred, a backup branch was also created to preserve a known working version of the project.
+
+Discord was successful for team communication and troubleshooting. Team members used Discord to coordinate development, report bugs, share screenshots and error messages, request pull request approvals, arrange voice calls, and communicate progress.
+
+Unreal Engine Blueprints were useful for rapidly implementing and testing gameplay mechanics. Blueprints were used for systems including projectile behavior, enemy health and damage, enemy roaming, the elevator, pickups, and UI functionality. Unreal Engine’s Nav Mesh system was also useful for implementing roaming enemy behavior while allowing the existing level geometry to determine where enemies could travel.
+
+### Tools or Techniques: Not Helpful
+
+The Tripo3DUEBridge plugin was not successful as a shared development tool during the Alpha stage. Although it functioned on the system where the graphics work was performed, other team members could not reliably open the project while the plugin was enabled. Attempts to rebuild the plugin were unsuccessful, so it was temporarily disabled to allow Alpha development to continue.
+
+This experience showed that introducing external project dependencies before verifying compatibility across the team can create integration problems. During Beta development, plugins and similar external dependencies should be tested on a separate branch and verified by multiple team members before being incorporated into the shared project.
+
+### Team Approach: Decision to Use Tools and Techniques
+
+The team’s initial project analysis divided development responsibilities according to each member’s assigned role while allowing responsibilities to be shared when necessary. GitHub branches and pull requests supported this approach because programmers, level designers, artists, and UI developers could work independently and then combine their work through a controlled review process.
+
+Discord supported the team’s planned communication approach by allowing members to coordinate work remotely and quickly discuss problems. Direct voice communication was also used when Donovan and Ben worked together on the level layout.
+
+The decision to use Unreal Engine Blueprints supported the team’s goal of producing a functional Alpha prototype within the available development time. The team prioritized functional gameplay systems before final visual polish, allowing the required mechanics to be implemented and tested while other areas of the project continued to develop.
+
+### Alpha Stage Status Assessment
+
+The team successfully completed the Alpha stage and produced a functional, playable Alpha build. The final Alpha contains player movement and shooting, projectile damage, multiple enemies, enemy health and destruction, enemy roaming, an elevator, jump pad functionality, Health, Armor, and Speed pickups, UI functionality, a death screen, and a victory screen.
+
+The Alpha testing process demonstrated that the major gameplay systems can function together within the playable level. Issues discovered during development were tested and corrected as the team integrated its individual contributions into the shared project.
+
+For Beta development, the team will build upon the completed Alpha by refining the level, improving graphics and environmental presentation, expanding and polishing gameplay where appropriate, and continuing combined-build testing. The team will also continue investigating the Tripo3D plugin compatibility issue or use an alternative workflow for future visual assets.
+
+Major changes and external dependencies will be tested across multiple team members’ systems before merging whenever possible. The team will continue using Discord, GitHub, pull requests, and playtesting to track progress and identify problems. These adjustments will help reduce integration issues and keep development on schedule for the Beta deadline.
+
+### Team Contributions
+
+- **Donovan Bewley - Team Lead/Programmer:** Worked with Ben on the base level layout, implemented and tested the elevator, implemented enemy roaming and navigation, created and tested additional enemies, assisted with Git/GitHub integration, and helped troubleshoot the First Person Character and Tripo3D plugin issues.
+
+- **Colby Law - UI/UX Programmer/Designer:** Implemented and corrected UI functionality, created the death and victory screens, created Health, Armor, and Speed pickups, corrected projectile collision behavior, and assisted with testing and project troubleshooting.
+
+- **Ben Olischar - Level Designer/World Builder:** Worked with Donovan on the base level design and playable layout, placed and adjusted level elements, and identified and corrected door collision problems.
+
+- **Nico Knox - Artist:** Worked on graphics and character/enemy assets and provided multiple enemy visual options for the project. Also assisted with testing and troubleshooting the graphics and plugin integration during Alpha development.## Module Four Project Log - Team Reflection
+
+### QA and Testing Process: What Went Well?
+
+The team’s QA and testing process was successful because testing occurred throughout Alpha development rather than only after the project was completed. Team members tested individual mechanics as they were implemented and also tested updated versions of the project after changes were merged through GitHub. Discord was used to communicate test results, errors, and possible solutions between team members.
+
+Testing by multiple team members was especially helpful when identifying integration problems. After graphics changes were merged, Donovan and Colby both encountered problems opening the updated project. This confirmed that the problem affected the shared project rather than only one team member’s installation. The team was then able to investigate the First Person Character Blueprint and Tripo3DUEBridge plugin issues.
+
+Gameplay mechanics were also tested throughout development. The team tested player movement and shooting, projectile damage, enemy health and destruction, enemy roaming, level navigation, collision, elevators, jump pads, pickups, and UI functionality. Pull requests and approvals provided another opportunity for team members to review changes before they were incorporated into the shared project.
+
+### Bugs: Identifying and Correcting
+
+Several bugs were identified and corrected during Alpha development. An earlier projectile collision issue caused the player to collide with projectiles when moving forward while shooting. Colby corrected the issue by adjusting the projectile spawn location.
+
+A larger integration problem occurred after graphics and character assets were added to the project. The updated project produced errors involving BP_FirstPersonCharacter and the Tripo3DUEBridge plugin. The First Person Character Blueprint issue was corrected. The Tripo3D plugin continued to create compatibility problems on other team members’ systems, so the team temporarily disabled the plugin in the .uproject file to allow Alpha development and testing to continue. The plugin compatibility issue will continue to be investigated as the project moves into Beta.
+
+Additional gameplay bugs were found through testing. Ben identified a collision problem with doors in the level and corrected the collision so they functioned properly.
+
+The elevator initially had a collision problem that prevented the player from standing on the moving platform. Adjusting the platform’s collision settings corrected the issue and allowed the player to ride the elevator as it moved between levels.
+
+Enemy roaming also revealed a navigation problem during testing. Although the enemy appeared to be standing inside the Nav Mesh, the enemy mesh was affecting navigation and creating an unusable area beneath the enemy. Disabling the mesh’s ability to affect navigation corrected the problem. The enemies were then able to select random reachable locations and roam around the level correctly.
+
+### QA and Testing: What Would We Do Differently?
+
+For future development, the team would test major changes on more than one team member’s computer before merging them into the main branch. This is especially important when introducing plugins, imported assets, or other external dependencies. The Tripo3D issue demonstrated that a feature working correctly on one team member’s installation does not guarantee that it will function correctly for the rest of the team.
+
+The team would also perform combined-build testing more frequently. Individual feature testing was useful for identifying problems with specific mechanics, but testing the complete build more often would allow integration problems to be discovered earlier. This would provide more time to correct issues before a milestone deadline.
+
+### Tools or Techniques: Helpful
+
+Git and GitHub were successful tools for Alpha development. Branches allowed team members to work independently, while pull requests and approvals allowed changes to be reviewed before being merged into the shared project. When project-loading problems occurred, a backup branch was also created to preserve a known working version of the project.
+
+Discord was successful for team communication and troubleshooting. Team members used Discord to coordinate development, report bugs, share screenshots and error messages, request pull request approvals, arrange voice calls, and communicate progress.
+
+Unreal Engine Blueprints were useful for rapidly implementing and testing gameplay mechanics. Blueprints were used for systems including projectile behavior, enemy health and damage, enemy roaming, the elevator, pickups, and UI functionality. Unreal Engine’s Nav Mesh system was also useful for implementing roaming enemy behavior while allowing the existing level geometry to determine where enemies could travel.
+
+### Tools or Techniques: Not Helpful
+
+The Tripo3DUEBridge plugin was not successful as a shared development tool during the Alpha stage. Although it functioned on the system where the graphics work was performed, other team members could not reliably open the project while the plugin was enabled. Attempts to rebuild the plugin were unsuccessful, so it was temporarily disabled to allow Alpha development to continue.
+
+This experience showed that introducing external project dependencies before verifying compatibility across the team can create integration problems. During Beta development, plugins and similar external dependencies should be tested on a separate branch and verified by multiple team members before being incorporated into the shared project.
+
+### Team Approach: Decision to Use Tools and Techniques
+
+The team’s initial project analysis divided development responsibilities according to each member’s assigned role while allowing responsibilities to be shared when necessary. GitHub branches and pull requests supported this approach because programmers, level designers, artists, and UI developers could work independently and then combine their work through a controlled review process.
+
+Discord supported the team’s planned communication approach by allowing members to coordinate work remotely and quickly discuss problems. Direct voice communication was also used when Donovan and Ben worked together on the level layout.
+
+The decision to use Unreal Engine Blueprints supported the team’s goal of producing a functional Alpha prototype within the available development time. The team prioritized functional gameplay systems before final visual polish, allowing the required mechanics to be implemented and tested while other areas of the project continued to develop.
+
+### Alpha Stage Status Assessment
+
+The team successfully completed the Alpha stage and produced a functional, playable Alpha build. The final Alpha contains player movement and shooting, projectile damage, multiple enemies, enemy health and destruction, enemy roaming, an elevator, jump pad functionality, Health, Armor, and Speed pickups, UI functionality, a death screen, and a victory screen.
+
+The Alpha testing process demonstrated that the major gameplay systems can function together within the playable level. Issues discovered during development were tested and corrected as the team integrated its individual contributions into the shared project.
+
+For Beta development, the team will build upon the completed Alpha by refining the level, improving graphics and environmental presentation, expanding and polishing gameplay where appropriate, and continuing combined-build testing. The team will also continue investigating the Tripo3D plugin compatibility issue or use an alternative workflow for future visual assets.
+
+Major changes and external dependencies will be tested across multiple team members’ systems before merging whenever possible. The team will continue using Discord, GitHub, pull requests, and playtesting to track progress and identify problems. These adjustments will help reduce integration issues and keep development on schedule for the Beta deadline.
+
+### Team Contributions
+
+- **Donovan Bewley - Team Lead/Programmer:** Worked with Ben on the base level layout, implemented and tested the elevator, implemented enemy roaming and navigation, created and tested additional enemies, assisted with Git/GitHub integration, and helped troubleshoot the First Person Character and Tripo3D plugin issues.
+
+- **Colby Law - UI/UX Programmer/Designer:** Implemented and corrected UI functionality, created the death and victory screens, created Health, Armor, and Speed pickups, corrected projectile collision behavior, and assisted with testing and project troubleshooting.
+
+- **Ben Olischar - Level Designer/World Builder:** Worked with Donovan on the base level design and playable layout, placed and adjusted level elements, and identified and corrected door collision problems.
+
+- **Nico Knox - Artist:** Worked on graphics and character/enemy assets and provided multiple enemy visual options for the project. Also assisted with testing and troubleshooting the graphics and plugin integration during Alpha development.
