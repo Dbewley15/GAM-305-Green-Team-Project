@@ -417,3 +417,63 @@ Major changes and external dependencies will be tested across multiple team memb
 - **Ben Olischar - Level Designer/World Builder:** Worked with Donovan on the base level design and playable layout, placed and adjusted level elements, and identified and corrected door collision problems.
 
 - **Nico Knox - Artist:** Worked on graphics and character/enemy assets and provided multiple enemy visual options for the project. Also assisted with testing and troubleshooting the graphics and plugin integration during Alpha development.
+
+## Module Five Project Log - Team Reflection
+
+### What Went Well Since the Last Stage Evaluation
+
+The team made good progress moving from Alpha into Beta. One of the biggest improvements was that the team continued using GitHub branches, pull requests, and approvals to integrate changes while reducing the chance of conflicting work. Team members also communicated through Discord to divide tasks and discuss problems as they appeared.
+
+The team successfully improved several areas of the game during Beta. Colby added a main menu, textured the pickups, corrected HUD menu routing, and upgraded the player UI. Nico continued improving the environment and added additional enemy assets while using Unreal Engine assets and meshes instead of relying on the third-party plugin that caused compatibility problems during Alpha. Ben continued assisting with level development and worked on the system that requires the player to defeat enemies before gaining access to the jump pad.
+
+Enemy gameplay was also improved during Beta. Projectile damage was corrected so the different enemy types could properly receive damage and be defeated. Enemy-to-player damage was added, and enemy AI was expanded so enemies can roam normally, detect the player within a 500-unit range, and chase the player when detected. These changes made the enemies a more active part of the gameplay instead of functioning only as roaming targets.
+
+### What Went Wrong Since the Last Stage Evaluation
+
+Several problems were discovered when the team tested the combined Beta build. Some decorative objects that were added to improve the appearance of the environment had collision enabled. These objects unintentionally blocked the player's intended path and prevented access to the jump pads. The problem was corrected by disabling collision on the decorative objects that did not require it.
+
+The expanded portion of the level also used a separate floor mesh that initially did not generate a usable NavMesh. The Nav Mesh Bounds Volume already covered the area, but enemies could not navigate across the new floor. After testing the floor settings, the collision complexity was changed to use Complex Collision As Simple. This allowed the NavMesh to generate across the expanded playable area and allowed the enemies to roam and chase the player correctly.
+
+Additional testing also identified problems with the enemy systems. Projectile logic initially worked correctly with Enemy 1 but did not work with the other enemy types. The problem was identified in the projectile logic and corrected so all enemy types could receive damage. A missing Blueprint connection also caused an enemy to interact incorrectly with a jump pad during testing. Correcting the connection restored the intended behavior.
+
+### Integration of Previous Evaluations
+
+The team used both the previous team evaluation and instructor feedback when planning Beta development. During Alpha, the team identified external plugin compatibility as a major development problem. The Tripo3DUEBridge plugin worked differently between team members' systems and created problems when the shared project was opened. Based on that experience, the team decided to avoid depending on the plugin during Beta. Nico instead worked with Unreal Engine and available Unreal/Fab assets when improving the environment.
+
+The team also reviewed instructor feedback and used it to assign Beta tasks. Colby focused on improving the presentation of the game by adding a main menu, improving the player UI, texturing pickups, and correcting menu navigation. Donovan focused primarily on enemy programming and gameplay systems. This division of responsibilities reduced overlapping work and allowed team members to concentrate on specific areas of the Beta.
+
+The previous evaluation also identified the need for more combined-build testing. During Beta, the team tested the merged project and discovered issues involving environment collision, navigation, enemy damage, AI behavior, and jump-pad interaction. Finding these problems through playtesting allowed them to be corrected before the Final Beta branch was created.
+
+### What We Would Do Differently
+
+For future development, the team would test environmental assets immediately after they are added rather than waiting until several changes have been combined. The collision and navigation problems demonstrated that an object can look correct in the level while still interfering with gameplay or AI navigation.
+
+The team would also continue improving task coordination before members begin making changes. Dividing the Beta work between UI, environment, level design, and enemy programming helped reduce conflicting edits. Continuing this approach during Final Release development should make integration easier.
+
+Major gameplay changes should also be tested from the player's perspective as soon as they are implemented. Testing should include not only whether an individual mechanic functions, but also whether it works correctly with the level, enemies, UI, collision, and progression systems.
+
+### Tools or Techniques That Were Not Helpful
+
+The Tripo3DUEBridge plugin continued to be an example of a tool that was not useful for the team's shared development workflow. Although it could function on an individual system, its compatibility problems during Alpha made it unreliable for a project being developed across multiple computers. The team therefore changed its approach during Beta and relied on Unreal Engine and compatible Unreal/Fab assets instead.
+
+The team also found that relying only on visual inspection of level assets was not sufficient. Decorative objects and the expanded floor appeared correct visually but caused collision and navigation problems during gameplay. Playtesting, collision testing, and displaying the NavMesh were more effective techniques for identifying these problems.
+
+### Beta Stage Status and Final Release Schedule
+
+The team successfully completed the Beta stage with the major gameplay systems functioning together in the playable level. The Beta includes player movement and shooting, multiple enemy types, enemy health and projectile damage, enemy-to-player damage, enemy roaming, player detection and chasing behavior, pickups, elevators, jump pads, improved UI, a main menu, improved environmental presentation, and level progression systems.
+
+Enemy behavior was expanded during Beta so enemies can roam the level and detect the player within a 500-unit range. Once the player is detected, the enemy can target and chase the player. The level was also adjusted so the expanded playable area supports AI navigation.
+
+The team also developed a combat objective around the jump pad. Five enemies are used as part of the encounter, with access to the jump pad restricted until the enemy objective is completed. This gives combat a clearer purpose and creates a progression path through the level rather than allowing the player to immediately bypass the encounter.
+
+The Final Beta branch was created after the team's Beta changes were integrated and tested. Moving toward Final Release, the team will focus on additional playtesting, bug fixing, balancing, environmental and UI polish, and verifying that the complete game can be played from the main menu through the victory condition without major errors. The team will continue using GitHub pull requests and approvals for changes and will test the combined build before the Final Release deadline.
+
+### Team Contributions
+
+- **Donovan Bewley - Team Lead/Programmer:** Reviewed and coordinated Beta development tasks, tested the combined Beta build, corrected collision and navigation issues discovered during testing, corrected enemy damage behavior, implemented and tested enemy-to-player damage, implemented the 500-unit player detection and enemy chase behavior, assisted with troubleshooting gameplay and Blueprint issues, and prepared the Final Beta branch. Donovan also contributed to the Module Five README reflection.
+
+- **Colby Law - UI/UX Programmer/Designer:** Added a main menu, textured the pickups, corrected HUD menu routing, upgraded the player UI, assisted with testing, and helped identify the cause of the projectile damage problem affecting additional enemy types.
+
+- **Ben Olischar - Level Designer/World Builder:** Continued assisting with level development and worked on the enemy objective and barrier system used to restrict access to the jump pad until the required enemies are defeated.
+
+- **Nico Knox - Artist:** Improved the environment and added additional enemy assets. Based on the team's previous evaluation, Nico used Unreal Engine and compatible assets rather than relying on the third-party plugin workflow that caused compatibility problems during Alpha.
