@@ -477,3 +477,114 @@ The Final Beta branch was created after the team's Beta changes were integrated 
 - **Ben Olischar - Level Designer/World Builder:** Continued assisting with level development and worked on the enemy objective and barrier system used to restrict access to the jump pad until the required enemies are defeated.
 
 - **Nico Knox - Artist:** Improved the environment and added additional enemy assets. Based on the team's previous evaluation, Nico used Unreal Engine and compatible assets rather than relying on the third-party plugin workflow that caused compatibility problems during Alpha.
+
+## Module Six Project Log - Team Reflection
+
+### Team Progress and Evaluation
+
+During Module Six, the Green Team focused on improving the visual presentation, audio, and overall player experience of our first-person shooter, *Cats in Space*. Building on our Module Three development and testing plan, we reviewed the feedback received during the Beta stage and identified areas that needed additional attention before the Final Release.
+
+From an artist's standpoint, our main priorities were improving the game's atmosphere, making the environment easier to navigate, and creating a more complete experience through character models, sound effects, lighting, and user interface improvements.
+
+### What Went Well?
+
+One of the most successful aspects of this development stage was the team's ability to divide responsibilities and make improvements based on instructor feedback.
+
+Nico added the cat character model and a mirror to the game, contributing to the visual presentation and helping establish the game's identity. Colby finalized the victory and death screens, including Play Again and Quit options on the death screen, and continued improving the user interface.
+
+Ben made several improvements to the level, including implementing sound effects for enemies, shooting, reloading, pickups, jump pads, and elevators. He also added environmental audio, along with audio for the main menu and victory screen. Additionally, Ben adjusted the lighting to make previously dark areas more visible and corrected the elevator timing so players have enough time to board and exit.
+
+Ben also fixed an issue where weapon firing and reloading sounds could be triggered while navigating the main menu. He corrected the sizing of the main menu and victory screen so both properly fill the screen.
+
+Donovan worked alongside Ben to help implement and troubleshoot final improvements, coordinated the team's response to instructor feedback, and handled project documentation.
+
+These improvements helped make the game feel more complete while supporting the gameplay mechanics developed during earlier modules.
+
+### What Went Wrong?
+
+One of the biggest challenges identified during the Beta evaluation was the lack of audio feedback. Although the game's mechanics were functional, actions such as shooting, reloading, collecting pickups, and interacting with elevators did not provide the level of feedback expected in a finished game.
+
+Lighting was another concern. Some areas of the level were excessively dark, making it difficult for players to see their surroundings and navigate the environment. This affected both the visual presentation and the gameplay experience.
+
+The elevator timing also needed adjustment because players did not always have enough time to get on or off the platforms comfortably.
+
+Additional issues appeared during final testing. Weapon firing and reload sounds could be triggered from the main menu, even though the player was not actively playing. The main menu and victory screen also had sizing issues that prevented them from filling the screen correctly.
+
+Looking back at our original development plan, we placed greater emphasis on implementing the required gameplay mechanics than on evaluating how the visual and audio elements worked together. As a result, several presentation issues remained until the later stages of development.
+
+Another challenge was uneven team participation, which meant the active members had to manage the remaining development and documentation responsibilities.
+
+### How Were Previous Evaluations Integrated?
+
+The instructor's Beta feedback played an important role in determining our priorities during Module Six.
+
+The instructor recommended adding sounds that provide feedback for player actions, including shooting, reloading, interacting with enemies, collecting pickups, and using elevators. Ben addressed these recommendations by implementing sound effects throughout the game and adding environmental audio.
+
+Ben also added audio to the main menu and victory screen, improving the presentation of the game outside of active gameplay.
+
+The instructor identified excessively dark shadows and recommended adjusting the lighting. Ben made lighting changes to improve visibility and create a more balanced environment.
+
+Another recommendation involved improving the death screen so players could decide whether to retry or quit. Colby addressed this by finalizing the death screen with Play Again and Quit options.
+
+In addition to addressing the instructor's recommendations, the team continued testing and correcting issues involving elevator timing, menu audio, and screen sizing.
+
+These changes demonstrate how the team used instructor feedback to improve the game's presentation and usability while preserving the core mechanics established in previous development stages.
+
+### What Would We Do Differently?
+
+If we were starting the project again, we would incorporate artistic presentation and audio testing earlier in development rather than treating them primarily as final-stage improvements.
+
+Although our initial focus on functional gameplay was important, testing lighting, environmental sounds, and interaction feedback throughout development would have helped us identify problems sooner.
+
+We would also schedule more frequent reviews of the game from the player's perspective. These reviews could help determine whether environments are easy to navigate, interactions provide clear feedback, and visual elements support the overall theme.
+
+Maintaining regular communication through Discord and reviewing changes through GitHub helped the active team members coordinate development. Continuing these practices while introducing more structured artistic and gameplay reviews would improve our development process.
+
+We would also establish clearer accountability for individual assignments and address missing contributions earlier to prevent additional work from falling on the remaining members.
+
+### Tools and Techniques That Were Less Helpful
+
+One technique that proved less effective was relying on visual inspection and individual feature testing without consistently evaluating the entire gameplay experience.
+
+For example, lighting might appear acceptable while editing a particular section of the level but become difficult to navigate during actual gameplay. Similarly, a functional pickup or elevator may still feel incomplete without appropriate audio feedback or timing adjustments.
+
+This demonstrated the importance of testing the game as a complete experience rather than evaluating individual components in isolation.
+
+Moving forward, we would combine our existing testing process with more frequent full-level playtesting focused on visual presentation, audio feedback, and player experience.
+
+### Team Contributions
+
+**Donovan Bewley — Team Lead/Programmer**
+- Worked alongside Ben to help implement and troubleshoot improvements during the final development stage.
+- Coordinated team development and communication regarding instructor feedback.
+- Updated the GitHub README and documented the team's progress and reflection.
+
+**Nico Knox — Artist**
+- Added the cat character model.
+- Added a mirror to the game.
+
+**Colby Law — UI/UX Programmer/Designer**
+- Finalized the death screen with Play Again and Quit options.
+- Finalized the victory screen.
+- Updated and refined the game's user interface.
+
+**Ben Olischar — Level Designer/World Builder**
+- Implemented enemy, shooting, and reloading sound effects.
+- Added audio for pickups, jump pads, and elevators.
+- Added environmental audio throughout the level.
+- Added audio to the main menu and victory screen.
+- Improved lighting and adjusted shadows to increase visibility.
+- Adjusted elevator timing to allow players enough time to board and exit.
+- Fixed weapon firing and reload sounds triggering while navigating the main menu.
+- Corrected the main menu and victory screen sizing to fit the full screen.
+
+**Gabriel San Miguel — Floating Programmer/Designer**
+- No project contributions were made.
+
+### Final Reflection
+
+Overall, Module Six demonstrated the importance of combining functional gameplay with effective artistic presentation. While earlier development stages focused primarily on implementing mechanics and ensuring the game was playable, the final stage allowed us to improve how players experience those mechanics.
+
+The addition of character assets, sound effects, improved lighting, refined UI screens, and gameplay timing adjustments helped strengthen the overall presentation of *Cats in Space*.
+
+The team also learned that artistic elements should be evaluated throughout development rather than primarily near the end. By incorporating instructor feedback, maintaining communication, and taking responsibility for our assigned tasks, the contributing team members were able to make meaningful improvements as we approached the Final Release.
